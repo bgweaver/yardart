@@ -2,6 +2,8 @@
 
 Welcome to the Yard Art website repository! This project represents my very first attempt at building a website entirely on my own. The inspiration for this site came from noticing a local business with a poorly designed website. I took it upon myself to create a more appealing and user-friendly version, although the business ultimately did not implement my design.
 
+You can view it live at: [Yard Art](https://bgweaver.github.io/yardart/)
+
 ## Overview
 
 This website serves as a promotional platform for Yard Art, a yard sign rental company based in Indianapolis. The site showcases their offerings, features a carousel of images, and provides contact information.
