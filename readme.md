@@ -1,35 +1,24 @@
-# Bootstrap 5 Simple Starter
+# Yard Art 🎉
 
-This is a simple boilerplate for creating and customizing Bootstrap websites. Just run the `npm run sass:watch` command and customize Bootstrap by changing the variable values.
+A clean, modern, responsive website for **Yard Art**, a yard sign rental business based in Indianapolis, Indiana. Built with Bootstrap 5, this site focuses on simplicity, clear calls to action, and good vibes. It supports marketing for all kinds of celebrations — birthdays, graduations, retirements, business promos, and more.
 
-This boilerplate is used in my [Bootstrap 5 From Scratch](https://traversymedia.com/bootstrap-from-scratch) course to build 5 different websites.
+## 🌐 Live Site
 
-## Usage
+> [Coming soon or drop your Netlify/Vercel/GitHub Pages link here]
 
-Install dependencies:
+## 🚀 Features
 
-```bash
-npm install
-```
+- 📱 **Mobile-first, responsive layout**
+- 🖼️ Image gallery with category filtering
+- 💬 Contact form powered by Netlify Forms
+- 💵 Clear pricing promise (with price match)
+- 🧠 FAQ and testimonials for trust-building
+- 🎯 SEO-friendly structure & headings
+- 🎨 Custom SVG swoop frame, icon section, and carousel
 
-This will install Bootstrap, Sass and Font Awesome.
+## 🛠️ Built With
 
-## Compile Sass
-
-To build your CSS files from Sass, run:
-
-```bash
-npm run sass:build
-```
-
-## Watch Sass
-
-To watch your Sass files for changes, run:
-
-```bash
-npm run sass:watch
-```
-
-To customize, add the Bootstrap variables to the `bootstrap.scss` file. You can look at the file `node_modules/bootstrap/dist/scss/_variables.scss` for a list of all the variables. Do NOT edit the `variables.scss` file directly, as it will be overwritten when you update Bootstrap.
-
-To add your own custom styles, use the `styles.scss` file.
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Netlify Forms](https://docs.netlify.com/forms/setup/)
+- Good old-fashioned HTML & CSS
