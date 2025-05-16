@@ -28,5 +28,10 @@ function userScroll() {
 
 document.addEventListener("DOMContentLoaded", () => {
   userScroll();
-  // Optionally, toggleNavbar could be called based on a condition if needed.
+
+  // Add event listener for navbar toggler button
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  if (navbarToggler) {
+    navbarToggler.addEventListener("click", toggleNavbar);
+  }
 });

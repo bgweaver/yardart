@@ -181,105 +181,127 @@
         </section>
 
     <!--Gallery-->
-    <div class="p-2 mb-0 text-center">
-      <div class="container pb-3">
-        <h2 class="text-body-emphasis display-6">See Our Work in Action!</h2>
-      </div>
-    </div>    
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-            <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3 blue text-light">
-                <h4 class="my-0 fw-normal">Birthday</h4>
-                </div>
-                <div class="card-body">
-                    <div id="bday" class="carousel slide">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./images/ayardartayardart.jpg" class="d-block w-100" alt="yard sign">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./images/Sweet16YardCardIndianapolis1.jpg" class="d-block w-100" alt="yard sign">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./images/40thBirthdayYardSignIndianapolis5.jpg" class="d-block w-100" alt="yard sign">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#bday" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#bday" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                </div>
-            </div>
-            </div>
-            <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3 blue text-light">
-                <h4 class="my-0 fw-normal">Graduation</h4>
-                </div>
-                <div class="card-body">
-                    <div id="grad" class="carousel slide">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./images/GraduationYardCardIndianapolisIN1.jpg" class="d-block w-100" alt="yard sign">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./images/GraduationYardCardsYartArt1.jpg" class="d-block w-100" alt="yard sign">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./images/GraduationYardSignIndianapolis2.jpg" class="d-block w-100" alt="yard sign">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#grad" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#grad" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                </div>
-            </div>
-            </div>
-            <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3 blue text-light">
-                <h4 class="my-0 fw-normal">Business</h4>
-                </div>
-                <div class="card-body">
-                <div id="carouselBiz" class="carousel slide">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./images/BusinessYardCardIndianapolis1.jpg" class="d-block w-100" alt="yard sign">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./images/BusinessYardSignsIndianapolisIN1.jpg" class="d-block w-100" alt="yard sign">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./images/DentalYardSignsIndianapolis1.jpg" class="d-block w-100" alt="yard sign">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBiz" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselBiz" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
-            </div>
-            </div>
-        </div>
+    <section class="gallery">
+<div class="p-2 mb-4 text-center">
+  <div class="container">
+    <h2 class="text-body-emphasis display-6 mb-4">See Our Work in Action!</h2>
+    
+    <!-- Gallery Filter Buttons -->
+    <div class="mb-4">
+      <button type="button" class="btn btn-outline-primary mx-1 filter-btn active" data-filter="all">All</button>
+      <button type="button" class="btn btn-outline-primary mx-1 filter-btn" data-filter="birthday">Birthday</button>
+      <button type="button" class="btn btn-outline-primary mx-1 filter-btn" data-filter="graduation">Graduation</button>
+      <button type="button" class="btn btn-outline-primary mx-1 filter-btn" data-filter="business">Business</button>
     </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row gallery-container g-3">
+    <!-- Birthday Images -->
+    <div class="col-6 col-md-4 col-lg-3 gallery-item birthday">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/ayardartayardart.jpg" class="card-img-top gallery-img" alt="Birthday yard sign" data-category="birthday">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Birthday Celebration</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-md-4 col-lg-3 gallery-item birthday">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/Sweet16YardCardIndianapolis1.jpg" class="card-img-top gallery-img" alt="Sweet 16 yard sign" data-category="birthday">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Sweet 16 Special</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-md-4 col-lg-3 gallery-item birthday">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/40thBirthdayYardSignIndianapolis5.jpg" class="card-img-top gallery-img" alt="40th Birthday yard sign" data-category="birthday">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>40th Birthday</small>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Graduation Images -->
+    <div class="col-6 col-md-4 col-lg-3 gallery-item graduation">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/GraduationYardCardIndianapolisIN1.jpg" class="card-img-top gallery-img" alt="Graduation yard sign" data-category="graduation">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Graduation Display</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-md-4 col-lg-3 gallery-item graduation">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/GraduationYardCardsYartArt1.jpg" class="card-img-top gallery-img" alt="Graduation yard sign art" data-category="graduation">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Grad Celebration</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-md-4 col-lg-3 gallery-item graduation">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/GraduationYardSignIndianapolis2.jpg" class="card-img-top gallery-img" alt="Graduation yard sign" data-category="graduation">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Class of 2025</small>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Business Images -->
+    <div class="col-6 col-md-4 col-lg-3 gallery-item business">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/BusinessYardCardIndianapolis1.jpg" class="card-img-top gallery-img" alt="Business yard sign" data-category="business">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Business Promotion</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-md-4 col-lg-3 gallery-item business">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/BusinessYardSignsIndianapolisIN1.jpg" class="card-img-top gallery-img" alt="Business yard signs" data-category="business">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Corporate Event</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-md-4 col-lg-3 gallery-item business">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/DentalYardSignsIndianapolis1.jpg" class="card-img-top gallery-img" alt="Dental yard signs" data-category="business">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Dental Practice</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="" id="modalImage" class="img-fluid" alt="Large preview">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
     
     <!--Testimonials-->
     <section class="home-testimonial testimonialBackground aqua">

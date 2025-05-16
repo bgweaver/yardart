@@ -12,8 +12,8 @@
   <body>
     <section class="landing d-flex flex-column">
       <!--Navigation-->
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+      <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container mx-1 ps-5">
           <button
             class="navbar-toggler"
             type="button"
@@ -31,12 +31,7 @@
                 <a href="#gallery" class="nav-link fw-semibold">Gallery</a>
               </li>
               <li class="nav-item">
-                <a
-                  href="contact.html"
-                  class="nav-link btn btn-outline-light border border-light fw-semibold mx-4 px-4"
-                  role="button"
-                  >Contact</a
-                >
+                <a href="#contact" class="nav-link fw-semibold">Contact</a>
               </li>
             </ul>
           </div>
@@ -133,25 +128,332 @@
           </div>
         </div>
       </div>
+      <svg
+        class="frame-decoration"
+        data-name="Layer 2"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMax meet"
+        viewBox="0 0 1920 192.275"
+      >
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #f3f6f9;
+            }
+          </style>
+        </defs>
+        <title>frame-decoration</title>
+        <path
+          class="cls-1"
+          d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z"
+          transform="translate(0 -158.755)"
+        />
+      </svg>
     </section>
-
+    </section>
     <!-- Jumbo -->
-    <div class="container">
-      <div class="p-2 mb-0 text-center aqua">
-        <div class="container py-5 aqua">
-          <h2 class="text-body-emphasis display-6">Why Rent from Yard Art?</h2>
-          <p class="col-lg-8 mx-auto lead">
-            If you are looking to rent a Yard Sign, look no further. Yard Signs
-            in Indianapolis is the No. 1 Yard Card rental company in
-            Indianapolis! Our goal is to provide our customers with outstanding,
-            cheap, affordable Yard Signs delivered by our reliable company.
+     <section class="jumbo">
+  <div class="container">
+    <div class="p-2 mb-0 text-center">
+      <div class="container pb-5">
+        <h2 class="text-body-emphasis display-6">Why Rent from Yard Art?</h2>
+        <p class="col-lg-8 mx-auto lead">
+          Looking for a Yard Sign rental in Indianapolis? Yard Art is proud to be the top choice for Yard Card rentals in the area. We’re committed to offering fun, affordable signs with reliable service that makes celebrating easy and stress-free.
+        </p>
+        <p class="text-muted text-center small">
+  Proudly serving Indianapolis and surrounding areas including Greenwood, Fishers, Carmel, Lawrence, Whiteland, Southport, and more.
+</p>
+<div class="text-center py-4">
+  <a href="#contact" class="btn btn-primary btn-lg px-4">Book Your Yard Card Today</a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!--Feature Icons-->
+<section class="icons bg-white py-5">
+  <div class="container-xl">
+    <div class="row g-4">
+      <div class="col-md-4 d-flex align-items-start gap-4">
+        <i class="fas fa-brands fa-earlybirds fa-3x text-secondary pe-3"></i>
+        <div>
+          <h5 class="fw-bold">Early Delivery</h5>
+          <p class="text-muted">
+            Planning a surprise? We deliver Yard Cards late at night or early in the morning so they're ready and waiting when your recipient wakes up.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-items-start gap-4">
+        <i class="fas fa-school fa-3x text-secondary"></i>
+        <div>
+          <h5 class="fw-bold">School Partnerships</h5>
+          <p class="text-muted">
+            Want to surprise someone at school? We've got you. We partner with local schools and can set up signs right on campus.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-items-start gap-4">
+        <i class="fas fa-tags fa-3x text-secondary pe-3"></i>
+        <div>
+          <h5 class="fw-bold">Price Matching</h5>
+          <p class="text-muted">
+            We already offer the lowest rates in Indianapolis—but if you find a better deal, we'll match it. No stress.
           </p>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact bg-light py-5 px-3">
+<!--Gallery-->
+    <section class="gallery py-5">
+<div class="p-2 mb-4 text-center">
+  <div class="container">
+    <h2 class="text-body-emphasis display-6 mb-4">See Our Work in Action!</h2>
+    
+    <!-- Gallery Filter Buttons -->
+    <div class="mb-4">
+      <button type="button" class="btn btn-outline-primary mx-1 filter-btn active" data-filter="birthday">Birthday</button>
+      <button type="button" class="btn btn-outline-primary mx-1 filter-btn" data-filter="graduation">Graduation</button>
+      <button type="button" class="btn btn-outline-primary mx-1 filter-btn" data-filter="business">Business</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row gallery-container g-3">
+    <!-- Birthday Images -->
+    <div class="col-6 col-lg-3 gallery-item birthday">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/ayardartayardart.jpg" class="card-img-top gallery-img" alt="Birthday yard sign" data-category="birthday">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Birthday Celebration</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-lg-3 gallery-item birthday">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/Sweet16YardCardIndianapolis1.jpg" class="card-img-top gallery-img" alt="Sweet 16 yard sign" data-category="birthday">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Sweet 16 Special</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-lg-3 gallery-item birthday">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/40thBirthdayYardSignIndianapolis5.jpg" class="card-img-top gallery-img" alt="40th Birthday yard sign" data-category="birthday">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>40th Birthday</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-lg-3 gallery-item birthday">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/ayardart5.jpg" class="card-img-top gallery-img" alt="40th Birthday yard sign" data-category="birthday">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>40th Birthday</small>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Graduation Images -->
+    <div class="col-6 col-lg-3 gallery-item graduation">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/GraduationYardCardsYartArt1.jpg" class="card-img-top gallery-img" alt="Graduation yard sign art" data-category="graduation">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Grad Celebration</small>
+        </div>
+      </div>
+      </div>
+      <div class="col-6 col-lg-3 gallery-item graduation">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/GraduationYardSignIndianapolis2.jpg" class="card-img-top gallery-img" alt="Graduation yard sign" data-category="graduation">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Class of 2014</small>
+        </div>
+      </div>
+    
+    </div>
+    <div class="col-6 col-lg-3 gallery-item graduation">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/GraduationYardSignIndianapolisIN1.jpg" class="card-img-top gallery-img" alt="Graduation yard sign" data-category="graduation">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Class of 2017</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3 gallery-item graduation">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/GraduationYardCardIndianapolisIN1.jpg" class="card-img-top gallery-img" alt="Graduation yard sign" data-category="graduation">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Class of 2018</small>
+        </div>
+      </div>
+    </div>
+    <!-- Business Images -->
+    <div class="col-6 col-lg-3 gallery-item business">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/BusinessYardCardIndianapolis1.jpg" class="card-img-top gallery-img" alt="Business yard sign" data-category="business">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Business Promotion</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-lg-3 gallery-item business">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/BusinessYardSignsIndianapolisIN1.jpg" class="card-img-top gallery-img" alt="Business yard signs" data-category="business">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Apartment Savings</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-lg-3 gallery-item business">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/DentalYardSignsIndianapolis1.jpg" class="card-img-top gallery-img" alt="Dental yard signs" data-category="business">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Dental Practice</small>
+        </div>
+      </div>
+    </div>
+
+<div class="col-6 col-lg-3 gallery-item business">
+      <div class="card h-100 shadow-sm hover-zoom">
+        <img src="./images/ApartmentYardSignIndianapolisIN3.jpg" class="card-img-top gallery-img" alt="Dental yard signs" data-category="business">
+        <div class="card-footer text-center bg-primary text-white py-2">
+          <small>Apartment Pricing</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="" id="modalImage" class="img-fluid" alt="Large preview">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center pt-5">
+  <a href="#contact" class="btn btn-primary btn-lg px-4">Book Your Yard Card Today</a>
+</div>
+
+</section>
+
+
+<!--FAQ-->
+<section class="faq py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center display-6 mb-5">Frequently Asked Questions</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <h5 class="fw-bold">When do you deliver signs?</h5>
+        <p class="text-muted">We typically deliver late at night or early in the morning to keep surprises secret and maximize the impact.</p>
+
+        <h5 class="fw-bold">Do you work with schools or businesses?</h5>
+        <p class="text-muted">Absolutely! We frequently set up signs at schools, offices, and other venues with permission.</p>
+      </div>
+      <div class="col-md-6">
+        <h5 class="fw-bold">What’s your cancellation policy?</h5>
+        <p class="text-muted">Cancellations must be made at least 24 hours before the scheduled delivery for a full refund.</p>
+
+        <h5 class="fw-bold">How do I book a Yard Card?</h5>
+        <p class="text-muted">Call us at <a href="tel:3178621486">(317) 862-1486</a> or use our contact form — we’ll confirm your date, details, and message.</p>
+      </div>
+    </div>
+  </div>
+</section>
+   
+
+    <!--Testimonials-->
+<section class="home-testimonial testimonialBackground">
+    <div class="container py-5">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h2 class="display-6 fw-bold">What Our Customers Say</h2>
+                <p class="lead">Join hundreds of satisfied customers who chose our services</p>
+            </div>
+        </div>
+        
+        <div class="row testimonial-cards">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card bg-white h-100 shadow-sm border-0 rounded-3">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-3">
+                            <i class="bi bi-quote fs-1 text-primary opacity-50"></i>
+                        </div>
+                        <p class="card-text flex-grow-1">I wanted to let you know how happy we were with the sign!! I was extremely and pleasantly surprised. Thank you so much for making my daughter's 16th birthday one she will never forget!</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="ms-2">
+                                <h6 class="mb-0 fw-bold">Karen</h6>
+                                <small class="text-muted">Birthday Celebration</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card bg-white h-100 shadow-sm border-0 rounded-3">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-3">
+                            <i class="bi bi-quote fs-1 text-primary opacity-50"></i>
+                        </div>
+                        <p class="card-text flex-grow-1">They were on time to do the work asked of them. The quality of their work was excellent and they were professional throughout. I would absolutely recommend them and use their services again in the future.</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="ms-2">
+                                <h6 class="mb-0 fw-bold">Susan Deal</h6>
+                                <small class="text-muted">Business Owner</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card bg-white h-100 shadow-sm border-0 rounded-3">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-3">
+                            <i class="bi bi-quote fs-1 text-primary opacity-50"></i>
+                        </div>
+                        <p class="card-text flex-grow-1">Thank You. Thank you. Thank you. Your company and you made our Becca and our entire family extremely happy today. For your kindness and caring, we are deeply humble and truly grateful. Love and God Bless.</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="ms-2">
+                                <h6 class="mb-0 fw-bold">Reginald O. Jones</h6>
+                                <small class="text-muted">Family Celebration</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</section>
+
+
+
+ <!-- Contact -->
+    <section id="contact" class="contact bg-white py-5 px-3">
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2">
@@ -159,12 +461,9 @@
               <h2 class="fw-bold">Contact Yard Art</h2>
               <hr class="w-25 mx-auto" />
               <p class="lead text-black">
-                Need a yard sign for any occasion — birthdays, anniversaries,
-                milestones, or just to make someone smile? Let us know what
-                you're celebrating, and we'll take care of the rest. Whether
-                it’s a surprise or a simple gesture, we've got the perfect sign
-                for you.
-              </p>
+  Need a yard sign for something worth celebrating? We’ve got you covered — birthdays, graduations, retirements, baby showers, business promos, school shoutouts, and everything in between. Whether it’s a surprise at sunrise or a message from the heart, we’ll make sure it shows up looking awesome and right on time.
+</p>
+
             </div>
 
             <!-- Form -->
@@ -217,8 +516,8 @@
               </div>
               <div data-netlify-recaptcha="true" class="mb-5"></div>
               <div class="mb-5 d-grid">
-                <button type="submit" class="btn btn-primary btn-sm">
-                  Send It!
+                <button type="submit" class="btn btn-primary btn-md submit">
+                  Submit
                 </button>
               </div>
             </form>
@@ -333,5 +632,6 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
   </body>
 </html>
