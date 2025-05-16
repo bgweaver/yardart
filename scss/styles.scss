@@ -38,6 +38,7 @@
 
 .landing .display-container {
   z-index: 10;
+  flex-grow: 1; /* Let the content expand to take available space */
 }
 
 .frame-decoration {
@@ -45,6 +46,7 @@
   width: 100%;
   position: relative;
   z-index: 10;
+  margin-top: auto; /* This pushes the SVG to the bottom of the flex container */
 }
 
 .carousel-container {
