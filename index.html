@@ -8,9 +8,45 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Yard Art</title>
+    <link rel="preload" as="image" href="./images/sky.webp" fetchpriority="high" />
+    <style>
+      .landing {
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+      }
+
+      .landing-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        overflow: hidden;
+        background-color: #6da9cd;
+      }
+
+      .bg-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        opacity: 0;
+        animation: bgFadeIn 0.4s ease-in-out forwards;
+      }
+    </style>
   </head>
+  
   <body>
-    <section class="landing d-flex flex-column">
+    <section class="landing d-flex flex-column position-relative">
+      <div class="landing-bg">
+    <img
+      src="./images/sky.webp"
+      alt=""
+      class="bg-img"
+      loading="eager"
+      fetchpriority="high"
+    />
+  </div>
       <!--Navigation-->
       <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container mx-1 ps-5">
@@ -48,8 +84,7 @@
               Yard Art
             </h1>
             <h2>The Best Yard Signs in Indianapolis</h2>
-            <h4 class="pt-3">Call to Schedule:                 <a href="tel:3178621486" class="text-decoration-none">(317) 862-1486</a>
-</h4>
+            <h4 class="pt-3">Call to Schedule:  <a href="tel:3178621486" class="text-decoration-none social-link">(317) 862-1486</a></h4>
           </div>
           <div class="col-lg-6 px-3 px-md-5">
             <div
@@ -165,7 +200,8 @@
   Proudly serving Indianapolis and surrounding areas including Greenwood, Fishers, Carmel, Lawrence, Whiteland, Southport, and more.
 </p>
 <div class="text-center py-4">
-  <a href="#contact" class="btn btn-primary btn-lg px-4">Book Your Yard Card Today</a>
+  <a class="btn btn-success btn-lg px-4" href="#contact">Book Now</a>
+
 </div>
 
 
@@ -175,11 +211,11 @@
 </section>
 
  <!--Feature Icons-->
-<section class="icons bg-white py-5">
+<section class="icons bg-success-faint pt-6 pb-5">
   <div class="container-xl">
     <div class="row g-4">
       <div class="col-md-4 d-flex align-items-start gap-4">
-        <i class="fas fa-brands fa-earlybirds fa-3x text-secondary pe-3"></i>
+        <i class="fas fa-brands fa-earlybirds fa-3x text-success pe-3"></i>
         <div>
           <h5 class="fw-bold">Early Delivery</h5>
           <p class="text-muted">
@@ -188,7 +224,7 @@
         </div>
       </div>
       <div class="col-md-4 d-flex align-items-start gap-4">
-        <i class="fas fa-school fa-3x text-secondary"></i>
+        <i class="fas fa-school fa-3x text-success"></i>
         <div>
           <h5 class="fw-bold">School Partnerships</h5>
           <p class="text-muted">
@@ -197,7 +233,7 @@
         </div>
       </div>
       <div class="col-md-4 d-flex align-items-start gap-4">
-        <i class="fas fa-tags fa-3x text-secondary pe-3"></i>
+        <i class="fas fa-tags fa-3x text-success pe-3"></i>
         <div>
           <h5 class="fw-bold">Price Matching</h5>
           <p class="text-muted">
@@ -210,7 +246,7 @@
 </section>
 
 <!--Gallery-->
-    <section id="gallery" class="gallery py-5">
+    <section id="gallery" class="gallery py-5 bg-white">
 <div class="p-2 mb-4 text-center">
   <div class="container">
     <h2 class="text-body-emphasis display-6 mb-4">See Our Work in Action!</h2>
@@ -354,38 +390,48 @@
   </div>
 </div>
 <div class="text-center pt-5">
-  <a href="#contact" class="btn btn-primary btn-lg px-4">Book Your Yard Card Today</a>
+    <a class="btn btn-success btn-lg px-4" href="#contact">Book Now</a>
 </div>
 
 </section>
 
 
-<!--FAQ-->
-<section class="faq py-5 bg-white">
+<!-- FAQ -->
+<section class="faq py-5">
   <div class="container">
     <h2 class="text-center display-6 mb-5">Frequently Asked Questions</h2>
     <div class="row g-4">
       <div class="col-md-6">
-        <h5 class="fw-bold">When do you deliver signs?</h5>
-        <p class="text-muted">We typically deliver late at night or early in the morning to keep surprises secret and maximize the impact.</p>
+        <h5 class="fw-bold">What kind of events do you cover?</h5>
+        <p class="text-muted">
+          Almost anything! From birthdays and graduations to anniversaries, homecomings, HOA events, and garage sales—we’ll help you celebrate loud and proud.
+        </p>
 
-        <h5 class="fw-bold">Do you work with schools or businesses?</h5>
-        <p class="text-muted">Absolutely! We frequently set up signs at schools, offices, and other venues with permission.</p>
+        <h5 class="fw-bold">Do you work with schools?</h5>
+        <p class="text-muted">
+          We sure do! We’ve delivered signs to Cathedral, Roncalli, Heritage Christian, and more. We’ll coordinate with school staff to ensure everything’s in place before the day starts.
+        </p>
       </div>
+
       <div class="col-md-6">
         <h5 class="fw-bold">What’s your cancellation policy?</h5>
-        <p class="text-muted">Cancellations must be made at least 24 hours before the scheduled delivery for a full refund.</p>
+        <p class="text-muted">
+          Cancel anytime up to 24 hours before delivery for a full refund. After that, we’ve likely already started prepping your display.
+        </p>
 
-        <h5 class="fw-bold">How do I book a Yard Card?</h5>
-        <p class="text-muted">Call us at <a href="tel:3178621486">(317) 862-1486</a> or use our contact form — we’ll confirm your date, details, and message.</p>
+        <h5 class="fw-bold">Do I need to be home when you deliver?</h5>
+        <p class="text-muted">
+          Nope! Just give us the address and any special instructions. We’ll take care of the rest—no need to wait around.
+        </p>
       </div>
     </div>
   </div>
 </section>
+
    
 
     <!--Testimonials-->
-<section class="home-testimonial testimonialBackground">
+<section class="home-testimonial bg-success-faint">
     <div class="container py-5">
         <div class="row mb-4">
             <div class="col-12 text-center">
@@ -396,7 +442,7 @@
         
         <div class="row testimonial-cards">
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card bg-white h-100 shadow-sm border-0 rounded-3">
+                <div class="card border-top border-4 border-success bg-white h-100 shadow-sm border-0 rounded-3">
                     <div class="card-body d-flex flex-column">
                         <div class="mb-3">
                             <i class="bi bi-quote fs-1 text-primary opacity-50"></i>
@@ -413,7 +459,7 @@
             </div>
             
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card bg-white h-100 shadow-sm border-0 rounded-3">
+                <div class="card border-top border-4 border-success bg-white h-100 shadow-sm border-0 rounded-3">
                     <div class="card-body d-flex flex-column">
                         <div class="mb-3">
                             <i class="bi bi-quote fs-1 text-primary opacity-50"></i>
@@ -430,7 +476,7 @@
             </div>
             
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card bg-white h-100 shadow-sm border-0 rounded-3">
+                <div class="card border-top border-4 border-success bg-white h-100 shadow-sm border-0 rounded-3">
                     <div class="card-body d-flex flex-column">
                         <div class="mb-3">
                             <i class="bi bi-quote fs-1 text-primary opacity-50"></i>
@@ -473,7 +519,7 @@
               <i class="fas fa-phone fa-2x text-primary mb-3"></i>
               <h5 class="fw-bold">Call Us</h5>
               <p class="mb-0">
-                <a href="tel:3178621486" class="text-decoration-none">(317) 862-1486</a>
+                <a href="tel:3178621486" class="text-decoration-none social-link">(317) 862-1486</a>
               </p>
             </div>
           </div>
@@ -482,7 +528,7 @@
               <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
               <h5 class="fw-bold">Email Us</h5>
               <p class="mb-0">
-                <a href="mailto:ayardart@yahoo.com" class="text-decoration-none">ayardart@yahoo.com</a>
+                <a href="mailto:ayardart@yahoo.com" class="text-decoration-none social-link">ayardart@yahoo.com</a>
               </p>
             </div>
           </div>
@@ -504,7 +550,7 @@
           <div class="col-auto">
             <div class="d-flex gap-3">
               <a
-                class="text-white"
+                class="text-white social-link"
                 href="https://twitter.com/AYardArt"
                 aria-label="Twitter"
               >
@@ -522,7 +568,7 @@
                 </svg>
               </a>
               <a
-                class="text-white"
+                class="text-white social-link"
                 href="https://instagram.com/yard_art_indianapolis"
                 aria-label="Instagram"
               >
@@ -540,7 +586,7 @@
                 </svg>
               </a>
               <a
-                class="text-white"
+                class="text-white social-link"
                 href="https://www.facebook.com/pages/Yard-Art/58159404345"
                 aria-label="Facebook"
               >
@@ -558,7 +604,7 @@
                 </svg>
               </a>
               <a
-                class="text-white"
+                class="text-white social-link"
                 href="mailto:ayardart@yahoo.com"
                 aria-label="Email"
               >
@@ -590,7 +636,7 @@
             <small>
               <a
                 href="https://teachweaver.com/"
-                class="text-white text-decoration-none"
+                class="credit-link"
                 >Site Design by Teach Weaver</a
               >
             </small>

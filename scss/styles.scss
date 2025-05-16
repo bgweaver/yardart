@@ -17,30 +17,23 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.landing {
-  background: #151515 url("../images/sky.webp") no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-top: 0;
-  margin-top: 0;
+@keyframes bgFadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
-.landing::after {
+.landing-bg::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: linear-gradient(
     to bottom,
     rgba(204, 238, 255, 0.5),
     rgba(253, 253, 253, 0.5)
   );
+  z-index: 1;
+  pointer-events: none;
 }
 
 .landing .display-container {
@@ -87,6 +80,38 @@
 
 .bg-primary {
   background-color: var(--bs-primary) !important;
+}
+
+.btn-success {
+  border: none;
+  box-shadow: 0 4px 15px rgba(255, 97, 166, 0.4);
+}
+
+.text-success:hover {
+  color: #e65292 !important;
+}
+
+a.social-link:hover {
+  color: #ff61a6 !important;
+}
+
+.bg-success-faint {
+  background-color: #e6f4fe;
+}
+
+a.credit-link {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.25s ease, font-weight 0.25s ease;
+}
+
+a.credit-link:hover,
+a.credit-link:focus {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  outline: none;
 }
 
 @media (min-width: 991.98px) {
